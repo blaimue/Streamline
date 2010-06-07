@@ -41,14 +41,13 @@ p {
 
 a {
   text-decoration: none;
-  border-bottom: solid 1px #333;
-  color: #333;
+  color: #03f;
 }
 a:hover {
-  color: #999;
+  color: #903;
 }
 a:visited {
-  color: #999;
+  color: #606;
 }
 
 #headNav {
