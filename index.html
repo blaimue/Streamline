@@ -7,8 +7,60 @@
     
     <style>
     
-        div {
+    /* YUI reset styles */
+    body,div,dl,dt,dd,ul,ol,li,pre,form,fieldset,input,textarea,blockquote,th,td { 
+    	margin:0;
+    	padding:0;
+    }
+    table {
+    	border-collapse:collapse;
+    	border-spacing:0;
+    }
+    fieldset,img { 
+    	border:0;
+    }
+    address,caption,cite,code,dfn,em,strong,th,var {
+    	font-style:normal;
+    	font-weight:normal;
+    }
+    ol,ul {
+    	list-style:none;
+    }
+    caption,th {
+    	text-align:left;
+    }
+    h1,h2,h3,h4,h5,h6 {
+    	font-size:100%;
+    	font-weight:normal;
+    }
+    q:before,q:after {
+    	content:'';
+    }
+    abbr,acronym { border:0;
+    }
+    /* end YUI reset styles*/
+    
+        a {
+            text-decoration: none;
+            border-bottom: solid 1px #333;
+            color: #333;
+        }
+        a:hover {
+            color: #999;
+        }
+        a:visited {
+            color: #999;
+        }
+        
+        #headNav {
+            top: -30px;
+            right: 0;
+            z-index: 5;
             position: absolute;
+        }
+        #headNav li {
+            float: left;
+            margin-left: 20px;
         }
         
         #container {
@@ -26,16 +78,13 @@
         #title h1 {
             font-size: 80px;
             margin-bottom: -30px;
+            margin-top: 50px;
         }
         
         .toplevel {
             width: 200px;
             text-align: justify;
-            cursor: pointer;
             top: 120px;
-        }
-        .toplevel:hover {
-            background: #ccc;
         }
         .toplevel span {
             font-size: 60px;
@@ -45,39 +94,52 @@
         }
         
         #low {
-            left: 0;
+            float: left;
+            width: 208px;
         }
         #mid {
             position: relative;
             top: 0;
             margin: auto;
+            width: 222px;
         }
         #high {
-            right: 0;
+            float: right;
         }
     </style>
     
 </head>
 <body class="tk-le-havre">
 
+
 <div id="container">
+
+    <div id="headNav">
+        <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/worryfree">WorryFree&trade;</a></li>
+        </ul>
+    </div>
 
 <div id="title" class="main">
     <h1>Streamline</h1>
-    <p>Worry Free Web Development</p>
-</div>
-
-<div class="toplevel" id="low">
-    I want to stay small and <span>SCRAPPY</span><br /> and use the web to support my offline efforts.
-</div>
-
-<div class="toplevel" id="mid">
-    I want a professional and <span>POLISHED</span> web presence.
+    <p style="font-style:italic;">Worry Free Web Development</p>
 </div>
 
 <div class="toplevel" id="high">
-    I want a rich interactive application to <span>IMPRESS</span> the world.
+    Business is booming! I have so many customers I can't handle it; I need to automate some of the boring parts of my job and know the little details won't slip through the cracks. I want an interactive app to <span>IMPRESS</span><br /> the world, providing tools to make life easier for my customers (and me!). I need my own eCommerce site, a custom app to keep my operations running smoothly, or have a bunch of customers clamoring for something.
 </div>
+
+<div class="toplevel" id="low">
+    I'm starting a small business or new project. I'm excited to get the word out and I want my website to show how awesome I am (pretty awesome!) but I'm worried about getting in over my head. I want to stay small and <span>SCRAPPY</span><br /> and use the web as efficiently as possible. Most of my new customers will be from my network or through word of mouth, so I definitely need a website so people can get in touch with me and pass my info along to their friends.
+</div>
+
+<div class="toplevel" id="mid">
+    My business has been growing but I want to do more. I need to keep clients in the loop about new services and want to start sharing some insight with the world to show potential customers that I know my stuff. I need a professional and <span>POLISHED</span><br /> web presence to help me push my reputation past the boundaries of my network. But I don't have the time or desire to spend a lot of time on a website - I need to focus on my business!
+</div>
+
 </div>
 </body>
 </html>
